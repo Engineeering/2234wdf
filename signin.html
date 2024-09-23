@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign In - Innovative Engineers Network</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Sign In</h1>
+    <div class="logo">Innovative Engineers Network</div>
+    <nav class="upper-right">
+        <ul>
+            <li><a href="signup.html" id="signupLink">Sign Up</a></li>
+            <li><a href="signin.html" id="signinLink">Sign In</a></li>
+            <li><a href="#" id="signoutLink" style="display: none;">Sign Out</a></li>
+        </ul>
+    </nav>
 </header>
 
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
 <section id="signin">
+    <h2>Sign In</h2>
     <form id="signinForm">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
@@ -23,6 +42,15 @@
         <button type="submit">Sign In</button>
     </form>
 </section>
+
+<footer id="footer">
+    <p>&copy; 2024 Innovative Engineers Network. All rights reserved.</p>
+</footer>
+
+<!-- Yellow Toolbar -->
+<div class="yellow-toolbar">
+    <p>Welcome to the Innovative Engineers Network!</p>
+</div>
 
 <script src="signin.js"></script>
 </body>

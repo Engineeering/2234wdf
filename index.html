@@ -9,13 +9,13 @@
 <body>
 
     <header>
-        <div class="upper-left">
-            <!-- Removed these two lines -->
-        </div>
+        <div class="logo">Innovative Engineers Network</div>
         <nav class="upper-right">
             <ul>
-                <li><a href="signup.html">Sign Up</a></li>
-                <li><a href="signin.html">Sign In</a></li>
+                <li id="userGreeting">Guest</li>
+                <li><a href="signup.html" id="signupLink">Sign Up</a></li>
+                <li><a href="signin.html" id="signinLink">Sign In</a></li>
+                <li><a href="#" id="signoutLink" style="display: none;">Sign Out</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +23,6 @@
     <!-- Hero Section with Background Image -->
     <section id="home" class="hero">
         <div class="hero-text">
-            <!-- Updated text styling -->
             <h1>Innovative Engineers Network</h1>
             <h2>Developed by Engineers for Engineers</h2>
             <p>Your hub for engineering discussions, resources, and connection.</p>
@@ -60,9 +59,15 @@
         <p>Engage in engineering discussions, share insights, and connect with other professionals.</p>
     </section>
 
-    <footer>
+    <footer id="footer">
         <p>&copy; 2024 Innovative Engineers Network. All rights reserved.</p>
     </footer>
 
+    <!-- Yellow Toolbar -->
+    <div class="yellow-toolbar">
+        <p>Welcome to the Innovative Engineers Network!</p>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

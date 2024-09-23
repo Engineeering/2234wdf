@@ -13,44 +13,62 @@ header {
     align-items: center;
     background-color: #0056b3; /* Blue background */
     color: white;
-    padding: 15px;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .upper-right ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .upper-right ul li {
-    display: inline-block;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .upper-right ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Updated Hero Section Text Color to Lighter Blue */
-.hero-text h1 {
-    font-size: 3em;
-    color: #87CEFA; /* Lighter blue for the title */
-    text-transform: uppercase;
+.upper-right ul li a:hover {
+    color: #ffcc00; /* Yellow on hover */
+}
+
+#userGreeting {
     font-weight: bold;
+}
+
+/* Styling the "Innovative Engineers Network" */
+.hero-text h1 {
+    font-size: 3em; /* Larger font size */
+    color: #0056b3; /* Same blue as the background */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold */
     margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adding subtle shadow */
 }
 
 .hero-text h2, .hero-text p {
-    color: #87CEFA; /* Lighter blue for subtitle and paragraph */
+    color: #87CEFA; /* Lighter blue for the smaller texts */
     font-size: 1.5em;
     margin: 10px 0;
 }
 
 .main-nav {
-    background-color: #ffcc00;
+    background-color: #ffcc00; /* Yellow background */
     text-align: center;
     padding: 10px 0;
 }
@@ -70,19 +88,25 @@ header {
     color: #333;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Hero Section with Reduced Background Image Height */
+.main-nav ul li a:hover {
+    color: #0056b3; /* Blue on hover */
+}
+
+/* Hero Section with Background Image */
 .hero {
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    height: 120px; /* Reduced height to make the toolbar more visible */
+    height: 400px; /* Increased height for better visibility */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
+    flex-direction: column; /* Stack title and text vertically */
+    position: relative;
 }
 
 .hero::after {
@@ -92,7 +116,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3); /* Overlay for better text visibility */
 }
 
 .hero-text {
@@ -100,8 +124,16 @@ header {
     z-index: 1;
 }
 
+.hero-text h1 {
+    color: white; /* Changed to white for better contrast */
+}
+
+.hero-text h2, .hero-text p {
+    color: #FFD700; /* Gold color for better contrast */
+}
+
 section {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -111,85 +143,55 @@ section h2 {
     color: #0056b3;
 }
 
-section p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 20px;
+section p, section ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    display: inline-block;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
-    position: relative;
+    padding: 20px 0;
 }
 
-footer p {
+.footer p {
     margin: 0;
-    font-size: 0.9em;
 }
 
 /* Yellow Toolbar */
 .yellow-toolbar {
     background-color: #ffcc00;
     color: #333;
-    padding: 15px;
     text-align: center;
-    font-weight: bold;
-    position: sticky;
+    padding: 10px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    font-weight: bold;
 }
 
-.yellow-toolbar p {
-    margin: 0;
-}
-
-/* Buttons and Form Styles */
-button {
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #003d7a;
-}
-
-input[type="text"], input[type="password"] {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .upper-right ul {
-        flex-direction: column;
-    }
-
-    .main-nav ul li {
+    .main-nav ul li, .upper-right ul li {
         display: block;
         margin: 10px 0;
-    }
-
-    .hero {
-        height: 150px; /* Slightly larger height for smaller screens */
     }
 
     .hero-text h1 {
@@ -197,7 +199,7 @@ input[type="text"], input[type="password"] {
     }
 
     .hero-text h2, .hero-text p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .yellow-toolbar {

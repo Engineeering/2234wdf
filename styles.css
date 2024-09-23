@@ -187,13 +187,35 @@ footer {
 .yellow-toolbar {
     background-color: #ffcc00;
     color: #333;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left; /* Align text to the left */
+    padding: 10px 30px; /* Adjust padding for better spacing */
     position: fixed;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     font-weight: bold;
+}
+
+.yellow-toolbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to align items inline */
+}
+
+.yellow-toolbar ul li {
+    margin-right: 20px; /* Space between items */
+}
+
+.yellow-toolbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.yellow-toolbar ul li a:hover {
+    color: #0056b3; /* Blue on hover */
 }
 
 /* Responsive Design */

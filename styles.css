@@ -103,7 +103,7 @@ header {
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-    height: 200px; /* Increased height for better visibility */
+    height: 150px; /* Increased height for better visibility */
     display: flex;
     justify-content: center;
     align-items: center;

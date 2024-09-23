@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0056b3; /* Blue background */
+    color: white;
+    padding: 15px;
+}
+
+.upper-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.upper-right ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.upper-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling the "Innovative Engineers Network" */
+.hero-text h1 {
+    font-size: 3em; /* Larger font size */
+    color: #0056b3; /* Same blue as the background */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adding subtle shadow */
+}
+
+.hero-text h2, .hero-text p {
+    color: #87CEFA; /* Lighter blue for the smaller texts */
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.main-nav {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section with Background Image */
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Reduced height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Stack title and text vertically */
+}
+
+.hero-text h2 {
+    color: #87CEFA; /* Lighter blue */
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    color: #87CEFA; /* Lighter blue */
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+footer {
